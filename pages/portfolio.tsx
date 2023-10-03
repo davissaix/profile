@@ -30,7 +30,7 @@ const Portfolio: React.FC = () => {
             <Image src="/luces.png" alt="Svelte Music Visualizer Preview" width={500} height={300} className="mb-4 rounded"/>
             <h2 className="text-2xl font-semibold mb-4">Svelte Music Visualizer</h2>
             <p className="mb-4 text-justify">A Svelte project presenting a matrix of colors that can be synchronized to the rhythm of your favorite song, creating a dynamic visualization. </p>
-            <a href="https://box-dinamic.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">View Project</a>
+            <a href="https://colorfulboxes.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">View Project</a>
           </div>
 
         </div>
