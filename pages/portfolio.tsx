@@ -22,7 +22,7 @@ const Portfolio: React.FC = () => {
             <Image src="/cora.png" alt="3D Web Experience Preview" width={500} height={300} className="mb-4 rounded"/>
             <h2 className="text-2xl font-semibold mb-4">3D Web Experience</h2>
             <p className="mb-4 text-justify">An interactive 3D environment created with Three.js. Features GPU-accelerated graphics rendering with WebGL.</p>
-            <a href="https://sanvalentine.netlify.app/" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">View Project</a>
+            <a href="https://myhappyvalentine.netlify.app/" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">View Project</a>
           </div>
 
           {/* Project 3: Svelte Music Visualizer */}
