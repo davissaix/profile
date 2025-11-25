@@ -46,12 +46,12 @@ const Portfolio: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
           {projects.map((project) => (
             <a href={project.link} key={project.id} target="_blank" rel="noopener noreferrer">
-              <div className={`project-card cursor-pointer h-64 mb-6 relative overflow-hidden ${project.gradient}`}>
+              <div className={`project-card cursor-pointer h-64 mb-6 relative overflow-hidden ${project.gradient} flex items-center justify-center`}>
                 <Image
                   src={project.image}
                   alt={project.title}
                   fill
-                  className="object-cover opacity-80 hover:opacity-100 transition"
+                  className="object-contain opacity-80 hover:opacity-100 transition p-4"
                 />
               </div>
               <h2 className="text-2xl font-bold text-gray-900 mb-3">{project.title}</h2>
