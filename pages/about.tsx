@@ -1,15 +1,77 @@
 import React from 'react';
 import Layout from '../src/app/layout';
+import Image from 'next/image';
 
 const About: React.FC = () => {
+  const skills = [
+    { category: "Frontend", items: ["React", "Next.js", "TypeScript", "Tailwind CSS"] },
+    { category: "Backend", items: ["Node.js", "Python", "JavaScript", "APIs"] },
+    { category: "Finance", items: ["Portfolio Management", "Data Analysis", "Corporate Finance", "Value Investing"] },
+    { category: "Languages", items: ["Spanish", "French", "English", "Portuguese", "German"] }
+  ];
+
   return (
     <Layout>
-      <div className="container mx-auto px-4 md:px-0 mt-10">
-        <div className="bg-gray-100 p-6 rounded-lg shadow-md m-4">
-          <h1 className="text-4xl font-bold mb-8 text-center">About Me</h1>
-          <p className="mb-4 text-justify">From getting to grips with finance to exploring the world of web development, my journey blends logic with creativity. Over five years in the stock market, I&apos;ve honed my skills in Portfolio Management, Corporate Finance, and Data Analysis. With a Value Investing strategy guiding me, I&apos;ve excelled in managing risk and making data-driven decisions.</p>
-          <p className="mb-4 text-justify">Beyond the realm of web development, I am interested in single web application development, making simple web app to solve specific problems</p>
-          <p className="mb-4 text-justify">Today, I find myself at the exciting crossroads of finance and technology. I am eager to join a team that values a unique blend of number-crunching prowess and coding. If you&apos;re seeking someone skilled in web development and programming, let&apos;s connect. Together, we can craft solutions that are both functional and innovative.</p>
+      <div className="container mx-auto px-4 py-20">
+        <div className="text-center mb-16">
+          <p className="text-gray-600 text-sm font-medium mb-2">● ABOUT</p>
+          <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-4">About Me</h1>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-20 items-center">
+          <div className="relative h-96 rounded-2xl overflow-hidden">
+            <Image
+              src="/david.jpg"
+              alt="David Ávila"
+              fill
+              className="object-cover"
+            />
+          </div>
+          <div>
+            <h2 className="text-3xl font-bold text-gray-900 mb-6">My Journey</h2>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              I blend finance with technology. Over five years in the stock market, I&apos;ve honed skills in portfolio management and data analysis. Now, I&apos;m channeling this analytical mindset into web development.
+            </p>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              I specialize in creating elegant web applications that solve real problems. My unique perspective combining finance expertise and coding skills allows me to build solutions that are both technically sound and business-minded.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              Fluent in 5 languages, I thrive in diverse environments. When not coding, I explore cultures and capture moments through street photography.
+            </p>
+          </div>
+        </div>
+
+        <div className="bg-gray-50 p-12 rounded-2xl mb-20">
+          <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">Skills & Expertise</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {skills.map((skillGroup) => (
+              <div key={skillGroup.category}>
+                <h3 className="font-semibold text-gray-900 mb-4">{skillGroup.category}</h3>
+                <div className="flex flex-wrap gap-3">
+                  {skillGroup.items.map((skill) => (
+                    <span key={skill} className="bg-white text-gray-900 px-4 py-2 rounded-lg text-sm font-medium border border-gray-200">
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="text-center">
+            <p className="text-4xl font-bold text-gray-900 mb-2">200+</p>
+            <p className="text-gray-600">Projects Completed</p>
+          </div>
+          <div className="text-center">
+            <p className="text-4xl font-bold text-gray-900 mb-2">5</p>
+            <p className="text-gray-600">Languages Spoken</p>
+          </div>
+          <div className="text-center">
+            <p className="text-4xl font-bold text-gray-900 mb-2">2+</p>
+            <p className="text-gray-600">Years Web Development</p>
+          </div>
         </div>
       </div>
     </Layout>
