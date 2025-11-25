@@ -1,19 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Allow all hosts for Replit proxy support
-  async headers() {
-    return [
-      {
-        source: '/:path*',
-        headers: [
-          {
-            key: 'X-Frame-Options',
-            value: 'ALLOWALL',
-          },
-        ],
-      },
-    ];
-  },
+  // Configuration for Replit environment
+  // The app runs on 0.0.0.0:5000 (configured in package.json scripts)
+  // to ensure compatibility with Replit's proxy and iframe embedding
 }
 
 module.exports = nextConfig
