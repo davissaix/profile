@@ -30,13 +30,13 @@ const About: React.FC = () => {
           <div>
             <h2 className="text-3xl font-bold text-gray-900 mb-6">My Journey</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
-              I blend finance with technology. Over five years in the stock market, I&apos;ve honed skills in portfolio management and data analysis. Now, I&apos;m channeling this analytical mindset into web development.
+              I blend finance with technology. Over five years in the stock market, I&apos;ve honed skills in portfolio management and data analysis. Now, I&apos;m an indie developer channeling this analytical mindset into building innovative web solutions.
             </p>
             <p className="text-gray-700 leading-relaxed mb-4">
-              I specialize in creating elegant web applications that solve real problems. My unique perspective combining finance expertise and coding skills allows me to build solutions that are both technically sound and business-minded.
+              Currently, I&apos;m launching <span className="font-semibold">PolylanGo</span>, a SaaS platform that combines my passion for languages with web development expertise. PolylanGo makes translation seamless and accessible, bridging cultures through technology.
             </p>
             <p className="text-gray-700 leading-relaxed">
-              Fluent in 5 languages, I thrive in diverse environments. When not coding, I explore cultures and capture moments through street photography.
+              Fluent in 5 languages, I thrive in diverse environments. My unique perspective allows me to build solutions that are technically elegant, business-minded, and culturally aware. When not coding, I explore cultures and capture moments through street photography.
             </p>
           </div>
         </div>
