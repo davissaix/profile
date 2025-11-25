@@ -33,7 +33,7 @@ const About: React.FC = () => {
               I blend finance with technology. Over five years in the stock market, I&apos;ve honed skills in portfolio management and data analysis. Now, as an <span className="font-semibold">indie dev</span>, I&apos;m channeling this analytical mindset into building innovative web solutions.
             </p>
             <p className="text-gray-700 leading-relaxed mb-4">
-              Currently building <span className="font-semibold">PolylanGo</span>, a <span className="font-semibold">SaaS</span> combining my passion for languages and web development.
+              Currently launching <span className="font-semibold">PolylanGo</span>, a <span className="font-semibold">SaaS</span> combining my passion for languages and web development.
             </p>
             <p className="text-gray-700 leading-relaxed">
               Fluent in 5 languages, I thrive in diverse environments. My unique perspective allows me to build solutions that are technically elegant, business-minded, and culturally aware. When not coding, I explore cultures and capture moments through street photography.
