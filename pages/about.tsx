@@ -61,7 +61,7 @@ const About: React.FC = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="text-center">
-            <p className="text-4xl font-bold text-gray-900 mb-2">200+</p>
+            <p className="text-4xl font-bold text-gray-900 mb-2">50+</p>
             <p className="text-gray-600">Projects Completed</p>
           </div>
           <div className="text-center">
