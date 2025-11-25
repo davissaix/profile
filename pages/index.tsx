@@ -68,12 +68,12 @@ const Home: React.FC = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
               {projects.map((project) => (
                 <Link href={project.link} key={project.id} target="_blank" rel="noopener noreferrer">
-                  <div className={`project-card cursor-pointer h-80 mb-4 relative overflow-hidden ${project.gradient}`}>
+                  <div className={`project-card cursor-pointer h-80 mb-4 relative overflow-hidden ${project.gradient} flex items-center justify-center`}>
                     <Image
                       src={project.image}
                       alt={project.title}
                       fill
-                      className="object-cover opacity-80 hover:opacity-100 transition"
+                      className="object-contain opacity-80 hover:opacity-100 transition scale-75 p-4"
                     />
                   </div>
                   <h3 className="text-lg font-semibold text-gray-900">{project.title}</h3>
