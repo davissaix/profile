@@ -11,7 +11,7 @@ const Portfolio: React.FC = () => {
 
           {/* Project 1: Multi-language Translator */}
           <div className="project bg-gray-100 p-6 rounded-lg shadow-md">
-            <Image src="/trans.png" alt="Multi-language Translator Preview" width={500} height={300} className="w-full mb-4 rounded"/>
+            <Image src="/polylango.png" alt="Multi-language Translator Preview" width={500} height={300} className="w-full mb-4 rounded"/>
             <h2 className="text-2xl font-semibold mb-4">Multi-language Translator</h2>
             <p className="mb-4 text-justify">A web app that translates text into multiple languages at once. Uses asynchronous API calls for translations.</p>
             <a href="https://polylango.com/" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">View Project</a>
