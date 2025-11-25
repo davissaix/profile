@@ -16,37 +16,26 @@ const Contact: React.FC = () => {
 
         <div className="max-w-2xl mx-auto">
           <div className="bg-gray-50 rounded-2xl p-12 mb-12">
-            <h2 className="text-2xl font-bold text-gray-900 mb-8">Get in Touch</h2>
-            <div className="space-y-6">
-              <div>
-                <p className="text-sm text-gray-600 mb-2">Email</p>
-                <a href="mailto:david@example.com" className="text-lg text-gray-900 hover:text-blue-600 transition">
-                  hello@davidavila.dev
-                </a>
-              </div>
-              <div>
-                <p className="text-sm text-gray-600 mb-4">Connect on Social</p>
-                <div className="flex gap-6">
-                  <a 
-                    href="https://www.linkedin.com/in/david-a-paris/" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-3 px-6 py-3 bg-white border border-gray-200 rounded-lg hover:border-gray-300 transition"
-                  >
-                    <Image src="/linked.svg" width={20} height={20} alt="LinkedIn" />
-                    <span>LinkedIn</span>
-                  </a>
-                  <a 
-                    href="https://github.com/davissaix/" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-3 px-6 py-3 bg-white border border-gray-200 rounded-lg hover:border-gray-300 transition"
-                  >
-                    <Image src="/github.svg" width={20} height={20} alt="GitHub" />
-                    <span>GitHub</span>
-                  </a>
-                </div>
-              </div>
+            <h2 className="text-2xl font-bold text-gray-900 mb-8">Connect on Social</h2>
+            <div className="flex gap-6 justify-center">
+              <a 
+                href="https://www.linkedin.com/in/david-a-paris/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 px-6 py-3 bg-white border border-gray-200 rounded-lg hover:border-gray-300 transition"
+              >
+                <Image src="/linked.svg" width={20} height={20} alt="LinkedIn" />
+                <span>LinkedIn</span>
+              </a>
+              <a 
+                href="https://github.com/davissaix/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 px-6 py-3 bg-white border border-gray-200 rounded-lg hover:border-gray-300 transition"
+              >
+                <Image src="/github.svg" width={20} height={20} alt="GitHub" />
+                <span>GitHub</span>
+              </a>
             </div>
           </div>
 
