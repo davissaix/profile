@@ -24,10 +24,10 @@ const Home: React.FC = () => {
     },
     {
       id: 3,
-      title: "Photography Portfolio",
-      desc: "Photography portfolio of travels and street.",
+      title: "FlashTable",
+      desc: "Create organized tables with custom columns. Perfect for polyglots comparing languages or for students mapping concepts, formulas, or definitions.",
       image: "/photography.png",
-      link: "https://davisphparis.replit.app",
+      link: "https://flashtable.polylango.com/",
       gradient: "gradient-card-3"
     }
   ];
