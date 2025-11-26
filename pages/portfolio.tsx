@@ -25,12 +25,12 @@ const Portfolio: React.FC = () => {
     },
     {
       id: 3,
-      title: "Svelte Music Visualizer",
-      desc: "A Svelte project presenting a matrix of colors synchronized to the rhythm of your favorite song.",
-      image: "/luces.png",
-      link: "https://colorfulboxes.vercel.app/",
+      title: "Photography Portfolio",
+      desc: "Photography portfolio of travels and street capturing diverse cultures, urban scenes, and candid moments from around the world.",
+      image: "/photography.png",
+      link: "https://davisphparis.replit.app",
       gradient: "gradient-card-3",
-      tags: ["Svelte", "Audio", "Visualization"]
+      tags: ["Photography", "Travel", "Street"]
     }
   ];
 
@@ -51,7 +51,7 @@ const Portfolio: React.FC = () => {
                   src={project.image}
                   alt={project.title}
                   fill
-                  className="object-contain opacity-80 hover:opacity-100 transition p-4"
+                  className="object-cover opacity-80 hover:opacity-100 transition"
                 />
               </div>
               <h2 className="text-2xl font-bold text-gray-900 mb-3">{project.title}</h2>

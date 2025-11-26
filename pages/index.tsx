@@ -24,10 +24,10 @@ const Home: React.FC = () => {
     },
     {
       id: 3,
-      title: "Svelte Music Visualizer",
-      desc: "Dynamic music visualization synchronized to rhythm.",
-      image: "/luces.png",
-      link: "https://colorfulboxes.vercel.app/",
+      title: "Photography Portfolio",
+      desc: "Photography portfolio of travels and street.",
+      image: "/photography.png",
+      link: "https://davisphparis.replit.app",
       gradient: "gradient-card-3"
     }
   ];
@@ -73,7 +73,7 @@ const Home: React.FC = () => {
                       src={project.image}
                       alt={project.title}
                       fill
-                      className="object-contain opacity-80 hover:opacity-100 transition scale-75 p-4"
+                      className="object-cover opacity-80 hover:opacity-100 transition"
                     />
                   </div>
                   <h3 className="text-lg font-semibold text-gray-900">{project.title}</h3>
