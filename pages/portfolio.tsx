@@ -51,7 +51,7 @@ const Portfolio: React.FC = () => {
                   src={project.image}
                   alt={project.title}
                   fill
-                  className="object-cover opacity-80 hover:opacity-100 transition"
+                  className="object-cover opacity-80 hover:opacity-100 transition scale-90"
                 />
               </div>
               <h2 className="text-2xl font-bold text-gray-900 mb-3">{project.title}</h2>

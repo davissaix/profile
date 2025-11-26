@@ -73,7 +73,7 @@ const Home: React.FC = () => {
                       src={project.image}
                       alt={project.title}
                       fill
-                      className="object-cover opacity-80 hover:opacity-100 transition"
+                      className="object-cover opacity-80 hover:opacity-100 transition scale-90"
                     />
                   </div>
                   <h3 className="text-lg font-semibold text-gray-900">{project.title}</h3>
