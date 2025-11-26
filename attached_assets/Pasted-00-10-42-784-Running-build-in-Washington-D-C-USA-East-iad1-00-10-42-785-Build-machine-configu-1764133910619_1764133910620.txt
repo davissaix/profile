@@ -1,0 +1,45 @@
+00:10:42.784 Running build in Washington, D.C., USA (East) – iad1
+00:10:42.785 Build machine configuration: 2 cores, 8 GB
+00:10:42.903 Cloning github.com/davissaix/profile (Branch: master, Commit: 15ef90a)
+00:10:42.903 Previous build caches not available.
+00:10:43.253 Cloning completed: 350.000ms
+00:10:43.607 Warning: Due to "engines": { "node": "24.x" } in your `package.json` file, the Node.js Version defined in your Project Settings ("18.x") will not apply, Node.js Version "24.x" will be used instead. Learn More: http://vercel.link/node-version
+00:10:43.608 Running "vercel build"
+00:10:44.017 Vercel CLI 48.10.5
+00:10:44.335 Warning: Due to "engines": { "node": "24.x" } in your `package.json` file, the Node.js Version defined in your Project Settings ("18.x") will not apply, Node.js Version "24.x" will be used instead. Learn More: http://vercel.link/node-version
+00:10:44.347 Installing dependencies...
+00:10:54.046 
+00:10:54.047 added 351 packages in 9s
+00:10:54.047 
+00:10:54.048 131 packages are looking for funding
+00:10:54.048   run `npm fund` for details
+00:10:54.091 Detected Next.js version: 13.5.4
+00:10:54.095 Running "npm run build"
+00:10:54.209 
+00:10:54.209 > mywebpro@0.1.0 build
+00:10:54.209 > next build
+00:10:54.209 
+00:10:54.770 Attention: Next.js now collects completely anonymous telemetry regarding usage.
+00:10:54.771 This information is used to shape Next.js' roadmap and prioritize features.
+00:10:54.772 You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+00:10:54.772 https://nextjs.org/telemetry
+00:10:54.772 
+00:10:54.845    Creating an optimized production build ...
+00:10:57.588 Browserslist: caniuse-lite is outdated. Please run:
+00:10:57.588   npx update-browserslist-db@latest
+00:10:57.589   Why you should do it regularly: https://github.com/browserslist/update-db#readme
+00:10:58.907 Browserslist: caniuse-lite is outdated. Please run:
+00:10:58.908   npx browserslist@latest --update-db
+00:10:58.909   Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+00:10:59.266  ✓ Compiled successfully
+00:10:59.268    Linting and checking validity of types ...
+00:11:01.786 
+00:11:01.787 Failed to compile.
+00:11:01.787 
+00:11:01.787 ./src/app/components/Footer.tsx
+00:11:01.787 15:19  Error: Do not use an `<a>` element to navigate to `/`. Use `<Link />` from `next/link` instead. See: https://nextjs.org/docs/messages/no-html-link-for-pages  @next/next/no-html-link-for-pages
+00:11:01.787 16:19  Error: Do not use an `<a>` element to navigate to `/about/`. Use `<Link />` from `next/link` instead. See: https://nextjs.org/docs/messages/no-html-link-for-pages  @next/next/no-html-link-for-pages
+00:11:01.788 17:19  Error: Do not use an `<a>` element to navigate to `/contact/`. Use `<Link />` from `next/link` instead. See: https://nextjs.org/docs/messages/no-html-link-for-pages  @next/next/no-html-link-for-pages
+00:11:01.788 
+00:11:01.788 info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/basic-features/eslint#disabling-rules
+00:11:01.872 Error: Command "npm run build" exited with 1
