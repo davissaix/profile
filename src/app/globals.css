@@ -15,39 +15,171 @@
 body {
   background-color: #fafbfc;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+  overflow-x: hidden;
 }
 
-.gradient-card-1 {
-  background: #ffffff;
-}
-
-.gradient-card-2 {
-  background: #ffffff;
-}
-
-.gradient-card-3 {
-  background: #ffffff;
-}
-
-.gradient-card-4 {
-  background: #ffffff;
-}
-
-.gradient-card-5 {
-  background: #ffffff;
-}
-
+/* Gradient Cards */
+.gradient-card-1,
+.gradient-card-2,
+.gradient-card-3,
+.gradient-card-4,
+.gradient-card-5,
 .gradient-card-6 {
   background: #ffffff;
+  box-shadow: 
+    0 10px 25px rgba(0, 0, 0, 0.05),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
+/* Project Cards - Main Styling */
 .project-card {
   border-radius: 16px;
   overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  box-shadow: 
+    0 10px 30px rgba(0, 0, 0, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+.project-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  pointer-events: none;
+  border-radius: 16px;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
 .project-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  transform: translateY(-12px) scale(1.02);
+  box-shadow: 
+    0 30px 60px rgba(0, 0, 0, 0.15),
+    0 0 40px rgba(102, 126, 234, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+.project-card:hover::before {
+  opacity: 1;
+}
+
+/* Magnetic Button Styling */
+.magnetic-button {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.magnetic-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.magnetic-button:hover::before {
+  left: 100%;
+}
+
+/* Skill Tags Animation */
+.skill-tag {
+  position: relative;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.skill-tag::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #667eea, #764ba2, #f093fb);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.skill-tag:hover::after {
+  transform: scaleX(1);
+}
+
+/* Social Links Enhanced */
+.social-link {
+  position: relative;
+  overflow: hidden;
+}
+
+.social-link::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(102, 126, 234, 0.2), transparent);
+  transition: left 0.6s ease;
+}
+
+.social-link:hover::after {
+  left: 100%;
+}
+
+/* Pulsing Animation for Status */
+@keyframes enhanced-pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.2);
+  }
+}
+
+.animate-pulse {
+  animation: enhanced-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Smooth Scroll Behavior */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
+/* Reduce Motion for Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/* Enhanced Shadows and Glows */
+.shadow-xl {
+  box-shadow: 
+    0 20px 50px rgba(0, 0, 0, 0.12),
+    0 0 30px rgba(102, 126, 234, 0.05);
+}
+
+/* Text Selection Styling */
+::selection {
+  background: #667eea;
+  color: white;
+}
+
+::-moz-selection {
+  background: #667eea;
+  color: white;
 }
